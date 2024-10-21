@@ -50,8 +50,8 @@ print_banner() {
 	echo "  \____/_/   \_\____|____/   |____/ \___|_|  |_| .__/ \__|"
 	echo "                                               |_|        "
 	echo ""
-	echo "                  --- Ubuntu 22.04 ---"
-	echo "                  --- By Mostech ---"
+	echo "                  --- Ubuntu 20.04 ---"
+	echo "                  --- By maulmlj ---"
 	echo -e "${NC}"
 }
 
@@ -62,8 +62,8 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Check Ubuntu version
-if [ "$(lsb_release -cs)" != "jammy" ]; then
-    echo -e "${RED}This script only supports Ubuntu 22.04 (Jammy)${NC}"
+if [ "$(lsb_release -cs)" != "focal" ]; then
+    echo -e "${RED}This script only supports Ubuntu 20.04 (focal)${NC}"
     exit 1
 fi
 
@@ -71,7 +71,7 @@ fi
 print_banner
 
 # Main installation process
-total_steps=25
+total_steps=27
 current_step=0
 
 echo -e "\n${MAGENTA}${BOLD}Starting GenieACS Installation Process${NC}\n"
