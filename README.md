@@ -9,17 +9,17 @@ sudo su
 git clone https://github.com/mauljasmay/GACS-Ubuntu-20.04-STB
 ```
 ```
-cd GACS-Ubuntu-20.04
+cd GACS-Ubuntu-20.04-STB
 ```
 ```
-chmod +x GACS-Jammy.sh
+chmod +x GACS-focal.sh
 ```
 ```
 sudo apt-get install dos2unix
 ```
 ```
-dos2unix GACS-Jammy.sh
+dos2unix GACS-focal.sh
 ```
 ```
-bash GACS-Jammy.sh
+bash GACS-focal.sh
 ```
